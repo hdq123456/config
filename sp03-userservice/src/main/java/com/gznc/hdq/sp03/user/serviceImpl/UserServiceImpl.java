@@ -3,6 +3,7 @@ package com.gznc.hdq.sp03.user.serviceImpl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -12,6 +13,7 @@ import com.gznc.hdq.util.JsonUtil;
 
 import lombok.extern.slf4j.Slf4j;
 
+@RefreshScope
 @Service
 @Slf4j
 public class UserServiceImpl implements UserService {
