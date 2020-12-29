@@ -19,6 +19,12 @@ eureka:
     config:
       override-none: true
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
 #---
 #spring:
  # profiles: user1  
@@ -30,10 +36,4 @@ eureka:
 #server:
  # port: 8102  
   
-  
-management:
-  endpoints:
-    web:
-      exposure:
-        include: refresh
   
